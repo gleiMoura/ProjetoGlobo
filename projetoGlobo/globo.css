@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Encode Sans', sans-serif;
+    background-color: white;
+}
+main{
+    width:92.66%;
+    background-color: white;
+    margin: auto;
+}
+header{
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    Width:171px;
+    Height: 36px
+}
+#menu2{
+    display: none;
+}
+nav{
+    margin:auto;
+    height: 40px;
+    border-top:1px solid #f5f6f7;
+    border-bottom:1px solid #f5f6f7;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+}
+.page1{
+    display: flex;
+    margin:auto;
+}
+.firstBigSection{
+    width:46.3%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 10px 0;
+    margin: 20px 3px; 
+}
+.secondBigSection{
+    width:46.3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 10px 30px;
+    margin: 20px 3px;
+    border-left:1px solid #EBEDEF;
+}
+.mainArticle{
+    border-bottom: 1px solid #EBEDEF;
+    padding-bottom: 20px;
+}
+
+.firstSubSection1{
+    padding: 10px 20px 20px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+    border-bottom: 1px solid #EBEDEF;
+}
+.firstBoxWithArticle1{
+    margin-left:15px;
+    width: 100%;
+}
+.firstBoxWithArticle1 img{
+    width: 100%;
+}
+p{
+    font-size: 19px;
+}
+h1{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 67px;
+    letter-spacing: -0.01em;
+    color: #C4160C;
+    margin-bottom:20px;
+}
+h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: #C4170C;
+    margin-top:5px;
+}
+h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.045em;
+    
+    color: #2F3134;
+    margin-top:5px;
+}
+h4{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    /* or 136% */
+    
+    letter-spacing: -0.048em;
+    
+    color: #2F3134;
+    margin-top:5px;
+}
+h5{
+    font-style: normal;
+    font-weight: 300;   
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #303134;
+    margin-top:5px;
+    margin-top:5px;
+}
+
+/*Here we begin the second part of the site with two columns*/
+
+.colomn1{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    border-right:1px solid #EBEDEF;
+    padding-right: 30px;
+}
+
+.colomn2{
+    width: 45%;
+    padding-left: 30px;
+}
+
+.secondBoxWithArticle1{
+    margin-bottom:80px;
+}
+.secondBoxWithArticle1 img{
+    width:100%;
+}
+
+/*Here, we start to make a responsive site to mobile*/
+
+@media(max-width:740px){
+    .secondBigSection{
+        width:46.3%;
+        display: block;
+        padding: 0px 0px 10px 30px;
+        margin: 20px 3px;
+        border-left:1px solid #EBEDEF;
+    }
+    .colomn1{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        border-right:1px solid #EBEDEF;
+    }
+    
+    .colomn2{
+        width: 90%;
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+
+    }
+    
+    .secondBoxWithArticle1{
+        margin-bottom:80px;
+    }
+    .secondBoxWithArticle1 img{
+        width:100%;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 67px;
+        letter-spacing: -0.01em;
+        color: #C4160C;
+        margin-bottom:20px;
+    }
+    .firstSubSection1{
+        padding: 10px 20px 20px 0;
+        display: flex;
+        flex-direction: column;
+        margin-top:20px;
+        border-bottom: 1px solid #EBEDEF;
+    }
+    .firstBoxWithArticle1{
+        margin-left:15px;
+        width: 100%;
+        margin-bottom:30px;
+    }
+}
+@media(max-width:550px) {
+    #menu1{
+        display: none;
+    }
+    #menu2{
+        display: flex;
+    }
+    .page1{
+        display: flex;
+        flex-direction: column;
+    }
+    .firstBigSection{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px 10px 0;
+        margin: 20px 3px; 
+    }
+    .secondBigSection{
+        width:100%;
+        display: block;
+        padding: 0px 0px 10px 30px;
+        margin: 20px 3px;
+        border-left:1px solid #EBEDEF;
+    }
+    .firstBoxWithArticle1 img{
+        width: 80%;
+    }
+    .secondBoxWithArticle1 img{
+        width:80%;
+    }
+    .firstBoxWithArticle1{
+        margin-left:15px;
+        width: 100%;
+        margin-bottom:60px;
+    }
+}
+@media(max-width:320px){
+    h1{
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 67px;
+        letter-spacing: -0.01em;
+        color: #C4160C;
+        margin-bottom:20px;
+    }
+}
+
+
+
+
+
